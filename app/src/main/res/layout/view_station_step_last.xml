@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txt_zone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:padding="6dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Veuillez renseigner une entité administrative (commune,quartier,cité,etc.) et une description liée à cela."
+        android:fontFamily="@font/montserrat"
+        android:textSize="11sp"
+        android:textColor="@color/BcBlack1"
+        />
+
+    <EditText
+        android:id="@+id/edit_entite"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:hint="Entité administrative"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:padding="15dp"
+        android:fontFamily="@font/roboto_regular"
+        android:inputType="textPersonName"
+        android:background="@drawable/edit_text_custom"
+        android:textSize="17sp" />
+
+    <EditText
+        android:id="@+id/edit_entite_description"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:hint="Description entité administrative"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:padding="15dp"
+        android:fontFamily="@font/roboto_regular"
+        android:inputType="textPersonName"
+        android:background="@drawable/edit_text_custom"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/txt_produit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:padding="6dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Vous pouvez selectionner un produit donné à attacher à cette station."
+        android:fontFamily="@font/montserrat"
+        android:textSize="11sp"
+        android:textColor="@color/BcBlack1"
+        />
+
+
+        <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:background="@drawable/edit_text_custom"
+            android:spinnerMode="dialog"
+            android:id="@+id/spinner_produit"
+            android:textColor="@color/BcBlack1"
+            android:textSize="15sp"
+
+            />
+
+
+    <com.github.ybq.android.spinkit.SpinKitView
+        android:id="@+id/spin_kit_load"
+        style="@style/SpinKitView.Large.FadingCircle"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="5dp"
+        android:fitsSystemWindows="true"
+        android:indeterminate="true"
+        android:layout_gravity="center_horizontal"
+        app:SpinKit_Color="@color/BcBlack"
+        android:visibility="gone"
+        />
+
+</LinearLayout>

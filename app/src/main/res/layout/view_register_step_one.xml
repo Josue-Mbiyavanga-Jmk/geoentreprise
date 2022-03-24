@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/edit_name"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:hint="Nom"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:padding="15dp"
+        android:fontFamily="@font/roboto_regular"
+        android:inputType="textPersonName"
+        android:background="@drawable/edit_text_custom"
+        android:textSize="17sp" />
+
+    <EditText
+        android:id="@+id/edit_mail"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:hint="Adresse e-mail"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:padding="15dp"
+        android:fontFamily="@font/roboto_regular"
+        android:inputType="textEmailAddress"
+        android:background="@drawable/edit_text_custom"
+        android:textSize="17sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:orientation="horizontal"
+        android:padding="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/edit_text_custom"
+        >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:background="#00000000"
+        android:text="+243 | "
+        android:layout_marginRight="10dp"
+        android:textColor="@color/BcGridbis"
+        android:textSize="15.4sp" />
+    <EditText
+        android:id="@+id/edit_phone"
+        style="@style/edit_input_style_app"
+        android:layout_marginLeft="55.5dp"
+        android:layout_width="match_parent"
+        android:hint="Téléphone"
+        android:inputType="phone"
+        android:maxLength="9"
+        android:textSize="15.4sp"
+        android:layout_alignParentRight="true"
+        android:fontFamily="@font/roboto_regular"
+
+        />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/edit_description"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:hint="Description"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:padding="15dp"
+        android:fontFamily="@font/roboto_regular"
+        android:inputType="text"
+        android:background="@drawable/edit_text_custom"
+        android:textSize="17sp" />
+
+</LinearLayout>

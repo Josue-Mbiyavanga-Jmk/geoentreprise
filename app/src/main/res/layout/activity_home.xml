@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.ActivityHome">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:id="@+id/ContMedium"
+
+        android:gravity="center"
+        android:paddingBottom="70dp"
+        >
+
+
+
+
+        <TextView
+            android:text="Bienvenu.e dans la plateforme Géoservice. Vous étes une entreprise et votre visibilité vous a autant préoccupé, vous avez la solution entre vos mains! De la définition de vos succursales (bureau,point de vente,magasin,etc.), produits et services, etc. sont gérées dans cette application pour le succès de votre entreprise."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/TxtImportanceApp"
+            android:textSize="10sp"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:fontFamily="@font/montserrat"
+            android:textColor="@color/GrisColor"/>
+
+        <LinearLayout
+            android:layout_marginTop="55dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:id="@+id/contenairetopButton"
+            android:layout_below="@+id/TxtImportanceApp">
+
+
+
+            <LinearLayout
+                android:id="@+id/contenaireGestStation"
+                android:layout_marginTop="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="38dp"
+                >
+
+                <ImageView
+                    android:id="@+id/BtGestStation"
+                    android:layout_gravity="center"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:background="@drawable/arrondi_grid"
+                    android:padding="15dp"
+                    android:tint="@color/BcBlack1"
+                    app:srcCompat="@drawable/ic_shop"
+                    />
+
+                <TextView
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:gravity="center_horizontal"
+                    android:text="Gestion \nStation"
+                    android:textAlignment="gravity"
+                    android:textColor="@color/BcGridbis"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/montserrat"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/contenairetopButton"
+                android:gravity="center_horizontal"
+                android:layout_weight="1"
+                android:id="@+id/contenaireGestProduit"
+                android:orientation="vertical"
+                >
+
+                <ImageView
+                    android:id="@+id/BtGestProduit"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:background="@drawable/arrondi_grid"
+                    android:padding="15dp"
+                    android:tint="@color/BcBlack1"
+                    app:srcCompat="@drawable/ic_produit_service"
+                    />
+
+                <TextView
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:gravity="center_horizontal"
+                    android:textSize="10sp"
+                    android:textStyle="bold"
+                    android:text="Gestion \nProduit"
+                    android:textAlignment="gravity"
+                    android:textColor="@color/BcGridbis"
+                    android:fontFamily="@font/montserrat"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/contenairetopButton"
+                android:gravity="center_horizontal"
+                android:layout_weight="1"
+                android:id="@+id/contenaireSetting"
+                android:orientation="vertical"
+                >
+
+                <ImageView
+                    android:id="@+id/BtSetting"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:background="@drawable/arrondi_grid"
+                    android:padding="15dp"
+                    android:tint="@color/BcBlack1"
+                    app:srcCompat="@drawable/ic_setting"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="25dp"
+                    android:gravity="center_horizontal"
+                    android:text="Parametre \nGénéral"
+                    android:textAlignment="gravity"
+                    android:textColor="@color/BcGridbis"
+                    android:textSize="10sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/montserrat"/>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

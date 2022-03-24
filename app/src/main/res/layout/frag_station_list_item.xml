@@ -1,0 +1,61 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        android:paddingTop="2dp"
+        android:paddingBottom="0dp"
+        android:id="@+id/recyclerview"/>
+
+   <!-- <RelativeLayout
+
+       android:gravity="center"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/contenaireHelp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:visibility="gone"
+        >
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/i1"
+            android:layout_width="250dp"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            app:lottie_rawRes="@raw/state"
+            app:lottie_loop="true"
+            android:layout_centerHorizontal="true"
+            android:padding="55dp"
+            android:layout_marginTop="0dp"
+            app:lottie_autoPlay="true" />
+
+
+        <TextView
+            android:id="@+id/helptext"
+            style="@style/txt_help_menu"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/i1"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="20dp"
+            android:text="Aucune campagne n'est créée pour l'instant. Veuillez pourvoir cliquer sur le bouton flottant 'plus' pour créer."
+            android:textColor="@color/NewGridLoginBckg"
+            android:textSize="10sp"
+            android:textAlignment="center"
+            android:textStyle="normal" />
+
+
+    </RelativeLayout>-->
+
+</RelativeLayout>

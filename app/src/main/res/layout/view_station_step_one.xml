@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:padding="6dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="7.5dp"
+        android:text="Veuillez renseigner des valeurs dans tous les champs afin d'enregistrer votre station avec succès."
+        android:fontFamily="@font/montserrat"
+        android:textSize="11sp"
+        android:textColor="@color/BcBlack1"
+        />
+
+    <EditText
+        android:id="@+id/edit_name"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:hint="Nom"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:padding="15dp"
+        android:fontFamily="@font/roboto_regular"
+        android:inputType="textPersonName"
+        android:background="@drawable/edit_text_custom"
+        android:textSize="17sp" />
+
+    <EditText
+        android:id="@+id/edit_ref_lieu"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:hint="Référence du lieu"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:padding="15dp"
+        android:fontFamily="@font/roboto_regular"
+        android:inputType="textPersonName"
+        android:background="@drawable/edit_text_custom"
+        android:textSize="17sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:orientation="horizontal"
+        android:padding="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/edit_text_custom"
+        >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:background="#00000000"
+        android:text="+243 | "
+        android:layout_marginRight="10dp"
+        android:textColor="@color/BcGridbis"
+        android:textSize="15.4sp" />
+    <EditText
+        android:id="@+id/edit_phone"
+        style="@style/edit_input_style_app"
+        android:layout_marginLeft="55.5dp"
+        android:layout_width="match_parent"
+        android:hint="Téléphone"
+        android:inputType="phone"
+        android:maxLength="9"
+        android:textSize="15.4sp"
+        android:layout_alignParentRight="true"
+        android:fontFamily="@font/roboto_regular"
+
+        />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:weightSum="5"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="0dp"
+            android:layout_marginRight="2dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:textColor="@color/BcBlack1"
+            android:textSize="12sp"
+            android:text="Est-elle le siège social de l'entreprise ?"
+            android:layout_weight="4"
+            android:fontFamily="@font/montserrat"
+            />
+        <Switch
+            android:id="@+id/switch_social_id"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="1"
+            android:textSize="9sp"
+            android:textOff="Non"
+            android:textOn="Oui"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:weightSum="5"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="0dp"
+            android:layout_marginRight="2dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:textColor="@color/BcBlack1"
+            android:textSize="12sp"
+            android:text="Prélever directement les coordonnées Gps ?"
+            android:layout_weight="4.2"
+            android:fontFamily="@font/montserrat"
+            />
+        <Switch
+            android:id="@+id/switch_gps_id"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="0.8"
+            android:textSize="9sp"
+            android:textOff="Non"
+            android:textOn="Oui" />
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

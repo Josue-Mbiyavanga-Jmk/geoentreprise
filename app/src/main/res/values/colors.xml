@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="NewGridLoginBckg">#313840</color>
+    <color name="BgTab">#144985</color>
+    <color name="colWhite">#fff</color>
+    <color name="NewBlueBis1">#166d89</color>
+    <color name="color_bas">#4557d0</color>
+    <color name="BcBlack1">#f5504e4e</color>
+    <color name="BcGridWhritebis">#fedad9d9</color>
+    <color name="colTextHome">#2d7256</color>
+    <color name="NewBlue">#2b8b9a</color>
+    <color name="green_col">#FF008000</color>
+    <color name="BtnSignupcolor">#09ae40</color>
+    <!-- Android Style Colors -->
+    <color name="android_blue">#33B5E5</color>
+    <color name="android_blue1">#089ad0</color>
+    <color name="blue_1">#1c2d35</color>
+    <color name="blue_2">#065276</color>
+    <color name="android_violet_dark">#9933CC</color>
+    <color name="android_orange">#FFBB33</color>
+    <color name="android_orange_dark">#FF8800</color>
+    <color name="android_rose">#F03E7B</color>
+    <color name="android_rose_dark">#D50A50</color>
+    <color name="android_red">#FF4444</color>
+
+    <color name="edittextBG">#DADADA</color>
+
+    <color name="transparent">#00000000</color>
+    <color name="bc">#1F2a3e</color>
+    <color name="bc1">#38445e</color>
+    <color name="bc2">#2ed2d4</color>
+    <color name="bc3">#46c3c9</color>
+
+    <color name="BcGrid">#a5a6a2a2</color>
+    <color name="BcGridbis">#808080</color>
+    <color name="BcBlack">#000000</color>
+    <color name="NewRed">#c93f3f</color>
+    <color name="BgVert">#0f9d58</color>
+    <color name="BgVert_achirer">#460f9d58</color>
+    <color name="BgVert_select">#280f9d58</color>
+    <color name="Bgtranspart">#00000000</color>
+
+
+    <color name="fbutton_color_turquoise">#1abc9c</color>
+    <color name="fbutton_color_green_sea">#16a085</color>
+    <color name="fbutton_color_emerald">#2ecc71</color>
+    <color name="fbutton_color_nephritis">#27ae60</color>
+    <color name="fbutton_color_peter_river">#3498db</color>
+    <color name="fbutton_color_belize_hole">#2980b9</color>
+    <color name="fbutton_color_amethyst">#9b59b6</color>
+    <color name="fbutton_color_wisteria">#8e44ad</color>
+    <color name="fbutton_color_wet_asphalt">#34495e</color>
+    <color name="fbutton_color_midnight_blue">#2c3e50</color>
+    <color name="fbutton_color_sun_flower">#f1c40f</color>
+    <color name="fbutton_color_orange">#f39c12</color>
+    <color name="fbutton_color_carrot">#e67e22</color>
+    <color name="fbutton_color_pumpkin">#d35400</color>
+    <color name="fbutton_color_alizarin">#e74c3c</color>
+    <color name="fbutton_color_pomegranate">#c0392b</color>
+    <color name="fbutton_color_clouds">#ecf0f1</color>
+    <color name="fbutton_color_silver">#bdc3c7</color>
+    <color name="fbutton_color_concrete">#95a5a6</color>
+    <color name="fbutton_color_asbestos">#7f8c8d</color>
+
+    <color name="snackBarTextColor">#FFFFFF</color>
+    <color name="snackBarTextColor_white">#B4B1B1</color>
+
+    <color name="snackBarBackgroundColor">#3F51B5</color>
+
+    <color name="snackBarColorNotificationError">#FFFF4444</color>
+
+    <color name="snackBarColorNotificationWaring">#FFF5A623</color>
+
+    <color name="snackBarColorNotificationSuccess">#FF8BC34A</color>
+
+    <color name="TwitterColor">#00acee</color>
+    <color name="WhiteColor">#FFFFFF</color>
+    <color name="GrisColor">#757474</color>
+</resources>

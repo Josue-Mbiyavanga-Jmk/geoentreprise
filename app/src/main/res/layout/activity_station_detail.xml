@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.ActivityStationDetail">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ScrollThemeAppBar"
+        android:fitsSystemWindows="true"
+        >
+
+
+    <com.google.android.material.appbar.CollapsingToolbarLayout
+        android:id="@+id/collaptoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:paddingBottom="5dp"
+        app:layout_scrollFlags="scroll|exitUntilCollapsed"
+        app:contentScrim="?attr/colorPrimary"
+        app:expandedTitleTextAppearance="@android:color/transparent"
+        android:fitsSystemWindows="true" >
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:id="@+id/toobar_custm"
+                android:layout_alignParentTop="true"
+                android:background="@color/BcBlack1"
+                android:layout_marginBottom="7.5dp"
+                >
+
+
+                <ImageView
+                    android:background="@drawable/square_gris_press"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_centerVertical="true"
+                    android:padding="1dp"
+                    android:layout_marginLeft="7.5dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:id="@+id/btn_back"
+                    android:tint="@color/colWhite"
+                    app:srcCompat="@drawable/ic_back_pressed"/>
+
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/btn_back"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:layout_width="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:text="Associer produit ou service"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    android:id="@+id/txt_title"
+                    />
+
+                <ImageView
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/square_gris_press"
+                    android:layout_width="?attr/actionBarSize"
+                    android:layout_height="?attr/actionBarSize"
+                    android:padding="15dp"
+                    android:id="@+id/btn_gps_locate"
+
+                    app:srcCompat="@drawable/ic_station_location"/>
+
+
+            </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:padding="6dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="10dp"
+            android:text="Vous pouvez ici ajouter des produits ou services l'un après l'autre à cette station."
+            android:fontFamily="@font/montserrat"
+            android:textSize="11sp"
+            android:textColor="@color/BcBlack1"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="10dp"
+            android:weightSum="5"
+            >
+            <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="0dp"
+                android:layout_marginRight="2dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:background="@drawable/edit_text_custom"
+                android:spinnerMode="dialog"
+                android:id="@+id/spinner_produit"
+                android:textColor="@color/BcBlack1"
+                android:textSize="15sp"
+                android:layout_weight="4.2"
+
+                />
+            <ImageButton
+                android:id="@+id/img_btn_add_produit"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="2dp"
+                android:layout_weight="0.8"
+                app:srcCompat="@drawable/ic_add_categorie"
+                android:background="@drawable/edit_text_custom"
+                />
+
+        </LinearLayout>
+
+            <com.github.ybq.android.spinkit.SpinKitView
+                android:id="@+id/spin_kit_load"
+                style="@style/SpinKitView.Large.FadingCircle"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="35dp"
+                android:layout_marginBottom="25dp"
+                android:fitsSystemWindows="true"
+                android:indeterminate="true"
+                android:layout_gravity="center_horizontal"
+                app:SpinKit_Color="@color/BcBlack1"
+                android:visibility="gone"
+                />
+
+
+        </LinearLayout>
+
+
+    </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.core.widget.NestedScrollView
+        android:layout_below="@+id/app_bar_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="15dp"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:padding="6dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:text="Liste de produits et services choisis"
+                android:fontFamily="@font/montserrat"
+                android:textSize="11sp"
+                android:textColor="@color/BcBlack1"
+                />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerview_choix_produit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <RelativeLayout
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/contenaireHelp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                >
+
+                <!-- app:lottie_rawRes="@raw/state"-->
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/i1"
+                    android:layout_width="250dp"
+                    android:layout_height="200dp"
+                    android:scaleType="centerCrop"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/state"
+                    android:layout_centerHorizontal="true"
+                    android:padding="55dp"
+                    android:layout_marginTop="0dp"
+                    app:lottie_autoPlay="true" />
+
+
+                <TextView
+                    android:id="@+id/helptext"
+                    style="@style/txt_help_menu"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/i1"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Aucun produit ou service n'est associé à cette station pour l'instant. Merci!"
+                    android:textColor="@color/NewGridLoginBckg"
+                    android:textSize="10sp"
+                    android:textAlignment="center"
+                    android:textStyle="normal" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

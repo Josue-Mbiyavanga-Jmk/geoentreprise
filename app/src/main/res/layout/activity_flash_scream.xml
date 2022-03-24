@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colWhite"
+    >
+
+<LinearLayout
+    android:layout_alignParentTop="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/Bgtranspart"
+    >
+
+    <!--<com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animation_view"
+        android:layout_width="235dp"
+        android:layout_height="235dp"
+        android:scaleType="centerCrop"
+        app:lottie_rawRes="@raw/blood"
+        app:lottie_loop="true"
+        android:layout_gravity="center_horizontal"
+        android:padding="55dp"
+        android:layout_marginTop="80dp"
+        app:lottie_autoPlay="true" />-->
+
+    <ImageView
+        android:id="@+id/img_view"
+        android:layout_width="235dp"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/ic_geo_loc"
+        android:layout_gravity="center_horizontal"
+        android:padding="40dp"
+        android:layout_marginTop="80dp"
+         />
+    <TextView
+        android:id="@+id/txt_main"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:padding="5dp"
+        android:layout_marginTop="5dp"
+        android:text="GéoService pour les entreprises"
+        android:fontFamily="@font/indigo_daisy"
+        android:textSize="30sp"
+        android:textColor="@color/BcBlack"
+        />
+    <customfonts.MyTextView_Roboto_Regular
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="GéoService pour les entreprises est l'une des application de la plateforme géoservice qui s'occupe de la gestion d'une entreprise lors de son adhésion à cette plateforme Congolaise permettant de publier ses service pour se faire localiser par des utilisateurs souhaitant en bénéficier. "
+        android:textColor="@android:color/secondary_text_light"
+        android:textSize="11sp"
+        android:fontFamily="@font/montserrat"
+        android:paddingTop="0dp"
+        android:paddingRight="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:paddingLeft="10dp"
+        android:textAlignment="center"
+        android:layout_marginTop="20dp"/>
+
+
+    <customfonts.MyTextView_Roboto_Regular
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/arrond_gris_noir"
+        android:paddingLeft="53dp"
+        android:paddingTop="13dp"
+        android:paddingRight="53dp"
+        android:id="@+id/BtNext"
+        android:paddingBottom="13dp"
+        android:text="Continuez"
+        android:textColor="@android:color/secondary_text_light"
+        android:textSize="13sp" />
+
+    <com.github.ybq.android.spinkit.SpinKitView
+        android:id="@+id/spin_kit_load"
+        style="@style/SpinKitView.Large.FadingCircle"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:fitsSystemWindows="true"
+        android:indeterminate="true"
+        android:layout_gravity="center_horizontal"
+        app:SpinKit_Color="@color/BcBlack1"
+        android:visibility="gone"
+        />
+
+
+</LinearLayout>
+
+<TextView
+
+    android:layout_width="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_alignParentBottom="true"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginTop="20dp"
+    android:textSize="8sp"
+    android:layout_marginBottom="10dp"
+    android:text="@string/txt_copy_right"
+    android:textColor="#c1bdbd"
+    />
+</RelativeLayout>

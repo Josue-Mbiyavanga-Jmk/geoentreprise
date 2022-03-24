@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activities.ActivityRegister">
+
+    <TextView
+        android:id="@+id/txt_main"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:padding="5dp"
+        android:layout_marginTop="15dp"
+        android:text="Enregistrement dans GéoService"
+        android:fontFamily="@font/indigo_daisy"
+        android:textSize="30sp"
+        android:textColor="@color/BcBlack"
+        />
+
+    <RelativeLayout
+        android:id="@+id/indicator"
+        android:layout_below="@+id/txt_main"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        >
+
+        <ImageView
+            android:id="@+id/circle1"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:background="@drawable/circlebarre_focus"
+
+
+            />
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:background="@drawable/circlebarre"
+            android:id="@+id/circle2"
+            android:layout_marginLeft="10dp"
+            android:layout_toEndOf="@id/circle1"
+            />
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:background="@drawable/circlebarre"
+            android:id="@+id/circle3"
+            android:layout_marginLeft="10dp"
+            android:layout_toEndOf="@id/circle2"
+            />
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:background="@drawable/circlebarre"
+            android:id="@+id/circle4"
+            android:layout_marginLeft="10dp"
+            android:layout_toEndOf="@id/circle3"
+
+            />
+
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/txt_description"
+        android:layout_below="@+id/indicator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:padding="6dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="7.5dp"
+        android:text="Veuillez renseigner des valeurs dans tous les champs afin d'enregistrer votre entreprise avec succès."
+        android:fontFamily="@font/montserrat"
+        android:textSize="13sp"
+        android:textColor="@color/BcBlack1"
+        />
+
+    <LinearLayout
+        android:layout_below="@+id/txt_description"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="7.5dp"
+        android:orientation="vertical"
+        android:layout_above="@+id/bottom">
+
+        <!-- debut première rendue des composant -->
+        <include
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/id_view_register_step_one"
+            layout="@layout/view_register_step_one"
+            android:visibility="visible"
+
+            />
+        <!-- debut deuxième rendue des composant -->
+        <include
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/id_view_register_step_two"
+            layout="@layout/view_register_step_two"
+            android:visibility="gone"
+            />
+        <!-- debut troisième rendue des composant -->
+        <include
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/id_view_register_step_three"
+            layout="@layout/view_register_step_three"
+            android:visibility="gone"
+            />
+
+
+        <!-- debut quartième rendue des composant -->
+        <include
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/id_view_register_step_last"
+            layout="@layout/view_register_step_last"
+            android:visibility="gone"
+            />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:layout_marginBottom="1dp"
+        android:layout_above="@+id/bottom"
+        android:id="@+id/view_bare"
+        android:background="@color/BcBlack"/>
+    <!-- debut des actions des buttons bas-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/transparent"
+        android:id="@+id/bottom"
+        >
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_alignParentRight="true"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="@color/BcGridbis"
+            android:id="@+id/BtnSave"
+            android:text="Suivant"
+            android:drawableRight="@drawable/ic_chevron_suivant"
+            android:background="@drawable/btn_back_pressed"
+            />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/BtnPreview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/btn_back_pressed"
+            android:drawableLeft="@drawable/ic_chevron_precedent"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="Précedent"
+            android:visibility="visible"
+            android:textColor="@color/BcGridbis"
+            android:textSize="12sp"
+            android:textStyle="normal" />
+
+
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

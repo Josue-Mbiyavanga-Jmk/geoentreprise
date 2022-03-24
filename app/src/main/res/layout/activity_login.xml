@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activities.ActivityLogin">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+    <ImageView
+        android:id="@+id/img_view"
+        android:layout_width="215dp"
+        android:layout_height="180dp"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/ic_geo_loc"
+        android:layout_gravity="center_horizontal"
+        android:padding="20dp"
+        android:layout_marginTop="20dp"
+        />
+    <TextView
+        android:id="@+id/txt_main"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:padding="5dp"
+        android:layout_marginTop="5dp"
+        android:text="Connexion à GéoService"
+        android:fontFamily="@font/indigo_daisy"
+        android:textSize="30sp"
+        android:textColor="@color/BcBlack"
+        />
+    <TextView
+        android:id="@+id/txt_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:padding="8dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="10dp"
+        android:text="Veuillez renseigner votre pseudo et votre mot de passe afin de vous connecter. Si vous n'avez pas encore de compte, prière de s'inscrire."
+        android:fontFamily="@font/montserrat"
+        android:textSize="11sp"
+        android:textColor="@color/BcBlack1"
+        />
+    <EditText
+        android:id="@+id/edit_pseudo"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:hint="Pseudo"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:padding="15dp"
+        android:fontFamily="@font/roboto_regular"
+        android:inputType="textPersonName"
+        android:background="@drawable/edit_text_custom"
+        android:textSize="17sp" />
+
+    <EditText
+        android:id="@+id/edit_password"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:hint="Mot de passe"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:padding="15dp"
+        android:fontFamily="@font/roboto_regular"
+        android:inputType="textPassword"
+        android:background="@drawable/edit_text_custom"
+        android:textSize="17sp" />
+    <customfonts.MyTextView_Roboto_Regular
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/arrond_gris_noir"
+        android:paddingLeft="53dp"
+        android:paddingTop="13dp"
+        android:paddingRight="53dp"
+        android:id="@+id/BtConnect"
+        android:paddingBottom="13dp"
+        android:text="Connexion"
+        android:textColor="@android:color/secondary_text_light"
+        android:textSize="15sp" />
+
+
+    <com.github.ybq.android.spinkit.SpinKitView
+        android:id="@+id/spin_kit_load"
+        style="@style/SpinKitView.Large.FadingCircle"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="25dp"
+        android:fitsSystemWindows="true"
+        android:indeterminate="true"
+        android:layout_gravity="center_horizontal"
+        app:SpinKit_Color="@color/BcBlack"
+        android:visibility="gone"
+        />
+    </LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_marginBottom="12dp"
+    android:orientation="horizontal"
+    android:gravity="center">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:paddingLeft="6dp"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="10dp"
+        android:text="Pas encore enregistré,"
+        android:fontFamily="@font/montserrat"
+        android:textSize="15sp"
+        android:textColor="@color/BcBlack1"
+        />
+    <TextView
+        android:id="@+id/txt_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="left"
+        android:padding="6dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="10dp"
+        android:text="cliquez ici pour le faire."
+        android:fontFamily="@font/montserrat"
+        android:textSize="15sp"
+        android:textColor="@color/cfdialog_positive_button_color"
+        />
+</LinearLayout>
+
+
+</RelativeLayout>

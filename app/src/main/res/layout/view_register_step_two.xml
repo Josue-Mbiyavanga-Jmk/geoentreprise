@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/edit_idnat"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:hint="IDNat"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:padding="15dp"
+        android:fontFamily="@font/roboto_regular"
+        android:inputType="text"
+        android:background="@drawable/edit_text_custom"
+        android:textSize="17sp" />
+
+    <EditText
+        android:id="@+id/edit_rccm"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:hint="Numéro RCCM"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:padding="15dp"
+        android:fontFamily="@font/roboto_regular"
+        android:inputType="text"
+        android:background="@drawable/edit_text_custom"
+        android:textSize="17sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:weightSum="5"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="0dp"
+            android:layout_marginRight="3dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:textColor="@color/BcBlack1"
+            android:textSize="15sp"
+            android:text="Vous pouvez attachez un logo de l'entreprise en cliquant à droite "
+            android:layout_weight="4.2"
+            android:fontFamily="@font/montserrat"
+            />
+
+        <ImageButton
+            android:id="@+id/img_btn_attach_file"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="0.8"
+            app:srcCompat="@drawable/ic_attach_photo"
+            android:background="@drawable/edit_text_custom"
+            />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/img_view_logo"
+        android:layout_width="235dp"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/ic_photo_placeholder"
+        android:layout_gravity="center_horizontal"
+        android:padding="15dp"
+        android:layout_marginTop="5dp"
+        />
+
+</LinearLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txt_categorie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:padding="6dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Veuillez selectionner une ou plusieurs catégories équivalentes à votre entreprise pour ainsi l'ajouter ci-dessous"
+        android:fontFamily="@font/montserrat"
+        android:textSize="11sp"
+        android:textColor="@color/BcBlack1"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="10dp"
+        android:weightSum="5"
+        >
+
+        <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="0dp"
+            android:layout_marginRight="2dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:background="@drawable/edit_text_custom"
+            android:spinnerMode="dialog"
+            android:id="@+id/spinner_categorie"
+            android:textColor="@color/BcBlack1"
+            android:textSize="15sp"
+            android:layout_weight="4.2"
+
+            />
+
+        <ImageButton
+            android:id="@+id/img_btn_add_categorie"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="0.8"
+            app:srcCompat="@drawable/ic_add_categorie"
+            android:background="@drawable/edit_text_custom"
+             />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="15dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:padding="6dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="Liste de catégories choisies"
+            android:fontFamily="@font/montserrat"
+            android:textSize="11sp"
+            android:textColor="@color/BcBlack1"
+            />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview_choix_categorie"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
